@@ -92,7 +92,7 @@
               <h6>Eğitim: <span class="text-secondary">Bilgisayar Mühendisliği 1. Sınıf</span></h6>
             </div>
             <div class="col-sm-6 py-2">
-              <h6>Tecrübe: <span class="text-secondary">0</span></h6>
+              <h6>Tecrübe: <span class="text-secondary">1</span></h6>
             </div>
             <div class="col-sm-6 py-2">
               <h6>Telefon: <span class="text-secondary">+90 531 769 24 54</span></h6>
@@ -101,7 +101,7 @@
               <h6>Email: <span class="text-secondary">yusa.karapinar@ogr.sakarya.edu.tr</span></h6>
             </div>
             <div class="col-sm-6 py-2">
-              <h6>Address: <span class="text-secondary">Sakarya Hendek 2019 Sokak</span></h6>
+              <h6>Adres: <span class="text-secondary">Sakarya Hendek 2019 Sokak</span></h6>
             </div>
           </div>
         </div>
@@ -391,45 +391,99 @@
     </div>
   </div>
 </div>
-<!-- Contact End -->
 <div class="position-relative d-flex align-items-center justify-content-center">
   <h1 class="display-1 text-uppercase text-white" id="BackText">Bana</h1>
   <h1 class="position-absolute text-uppercase text-primary">Ulaşın</h1>
 </div>
+
 
 <div class="container_1">
 
   <form action="action_page.php">
 
     <label for="fname">Ad</label>
-    <input type="text" id="fname" name="firstname" placeholder="Adınınızı giriniz..">
+    <input type="text" id="fname" name="firstname" placeholder="Adınızı giriniz.." required>
 
     <label for="lname">Soyad</label>
-    <input type="text" id="lname" name="lastname" placeholder="Soyadınızı giriniz..">
+    <input type="text" id="lname" name="lastname" placeholder="Soyadınızı giriniz.." required>
+
+    <label for="email">E-posta</label>
+    <input type="email" id="email" name="email" placeholder="E-posta adresinizi giriniz.." required>
+
+    <label for="phone">Telefon</label>
+    <input type="tel" id="phone" name="phone" placeholder="Telefon numaranızı giriniz.." required>
+
+    <label for="birthday">Doğum Tarihi</label>
+    <input type="date" id="birthday" name="birthday" required>
 
     <label for="country">Ülke</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
+    <select id="country" name="country" required>
+      <option value="TR">Türkiye</option>
+      <option value="US">ABD</option>
+      <option value="CA">Kanada</option>
+      <option value="AU">Avustralya</option>
+      <option value="DE">Almanya</option>
+      <option value="FR">Fransa</option>
+      <option value="GB">Birleşik Krallık</option>
+      <option value="IT">İtalya</option>
+      <option value="JP">Japonya</option>
+      <option value="CN">Çin</option>
+      <option value="IN">Hindistan</option>
+      <option value="RU">Rusya</option>
+      <option value="BR">Brezilya</option>
+      <option value="ZA">Güney Afrika</option>
+      <option value="MX">Meksika</option>
+      <option value="ES">İspanya</option>
+      <option value="SE">İsveç</option>
+      <option value="NO">Norveç</option>
+      <option value="FI">Finlandiya</option>
+      <option value="DK">Danimarka</option>
+      <option value="NL">Hollanda</option>
+      <option value="CH">İsviçre</option>
+      <option value="NZ">Yeni Zelanda</option>
+      <option value="SG">Singapur</option>
+      <option value="MY">Malezya</option>
+      <option value="AR">Arjantin</option>
+      <option value="BE">Belçika</option>
+      <option value="GR">Yunanistan</option>
+      <option value="KR">Güney Kore</option>
+      <option value="PT">Portekiz</option>
+      <option value="PL">Polonya</option>
     </select>
 
-    <label for="subject">Konu</label>
-    <textarea id="subject" name="subject" placeholder="..." style="height:200px"></textarea>
+    <label for="gender">Cinsiyet</label>
+    <select id="gender" name="gender" required>
+      <option value="male">Erkek</option>
+      <option value="female">Kadın</option>
+      <option value="other">Diğer</option>
+      <option value="prefer_not_to_say">Belirtmek İstemiyorum</option>
+    </select>
 
-    <input type="submit" value="Submit">
+
+    <label for="subject">Konu</label>
+    <textarea id="subject" name="subject" placeholder="Konu hakkında detaylar..." style="height:200px"
+      required></textarea>
+
+    <input type="checkbox" id="subscribe" name="subscribe" value="subscribe">
+    <label for="subscribe">Acil İletişim</label><br>
+
+    <input type="radio" id="contactEmail" name="contactMethod" value="email" checked>
+    <label for="contactEmail">E-posta ile iletişime geçin</label><br>
+    <input type="radio" id="contactPhone" name="contactMethod" value="phone">
+    <label for="contactPhone">Telefon ile iletişime geçin</label><br>
+
+    <input type="submit" value="Gönder">
 
   </form>
 </div>
-<!-- Contact START  -->
+<!-- Contact END -->
+
 
 <!-- FOOTER START  -->
 
 <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5" id="footer">
   <div class="container text-center py-5">
     <div class="d-flex justify-content-center mb-4">
-      <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
-      <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
       <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
       <a class="btn btn-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
     </div>
