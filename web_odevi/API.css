@@ -1,0 +1,57 @@
+.movie-item {
+
+    width: 200px;
+    /* Kartların sabit genişliği */
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    /* Kart içeriğini yatay hizala */
+    flex-direction: column;
+    /* İçeriği dikey hizala */
+
+}
+
+.movie-details {
+    flex-grow: 1;
+    /* Detayları genişlet, poster sabit boyutta kalır */
+}
+
+.movie-title {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.movie-poster {
+    width: 150px;
+    /* Poster genişliğini istediğiniz değere ayarlayın */
+    height: auto;
+    /* Otomatik yükseklik ayarı */
+    border-radius: 5px;
+    /* Köşeleri yuvarlat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Gölgelendirme efekti ekle */
+    transition: transform 0.3s ease;
+    /* Geçiş efekti */
+    align-self: center;
+    /* Resmi ortala */
+}
+
+.movie-poster:hover {
+    transform: scale(1.1);
+    /* Fare üzerine gelindiğinde büyütme efekti */
+}
+
+.container1 {
+    width: 80%;
+    /* Container'ın genişliği %80 */
+    margin: 0 auto;
+    /* Ortalama */
+    padding: 0 10%;
+    /* Container'ın sol ve sağ kenarlarında %20'lik alan bırakır */
+    /* Padding'i genişliğin içine dahil eder */
+}
