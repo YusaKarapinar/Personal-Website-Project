@@ -28,6 +28,7 @@
 
 .movie-poster {
     width: 150px;
+    margin: 0 auto;
     /* Poster genişliğini istediğiniz değere ayarlayın */
     height: auto;
     /* Otomatik yükseklik ayarı */
